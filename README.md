@@ -6,7 +6,7 @@
 flowchart LR
      A(OPEN AI) <-- API --> B{chatbot} <-- text --> C{{USER input }}
      B <-- PROMPTS --> C
-      D[(Database)]
+     C --auth--> D[(Database)]
     
 
 
