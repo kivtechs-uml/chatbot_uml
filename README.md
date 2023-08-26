@@ -2,8 +2,11 @@
 
 
 
+
+
+
 ```mermaid
-flowchart LR
+flowchart TB
      A(OPEN AI) <-- API --> B{chatbot} <-- text --> C{{USER input }}
      B <-- PROMPTS --> C
      C --auth--> D[(Database)]
@@ -13,13 +16,10 @@ flowchart LR
 
 ```
 
-
 ```mermaid
-flowchart TB
-     A(OPEN AI) <-- API --> B{chatbot} <-- text --> C{{USER input }}
-     B <-- PROMPTS --> C
-     C --auth--> D[(Database)]
-     B -- auth --> D
+flowchart LR
+     A(user) <-- login --> D[(Database)] <-- auth --> C{{ TRUE }}
+  
     
 
 
