@@ -19,7 +19,7 @@ flowchart TB
 ```mermaid
 flowchart LR
      A(user) <-- login --> D[(Database)] <-- auth --> C{{ auth:TRUE }}
-     A  <--AUTH-> C 
+     A  <-- AUTH --> C 
   
     
 
