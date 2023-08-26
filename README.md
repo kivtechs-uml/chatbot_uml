@@ -12,3 +12,15 @@ flowchart LR
 
 
 ```
+
+
+```mermaid
+flowchart TB
+     A(OPEN AI) <-- API --> B{chatbot} <-- text --> C{{USER input }}
+     B <-- PROMPTS --> C
+     C --auth--> D[(Database)]
+     B -- auth --> D
+    
+
+
+```
